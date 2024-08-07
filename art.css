@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Bona Nova SC", serif;
+  background: linear-gradient(
+    to right bottom,
+    rgb(246, 238, 224),
+    rgb(251, 251, 251)
+  );
+}
+.wrapper {
+  margin: 5%;
+}
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.image {
+  display: block;
+  /* width: 100%;
+  height: auto; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(252, 235, 204);
+  border-radius: 5px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+a:hover {
+  color: orangered;
+}
+
+button {
+  padding-top: 2.5%;
+  background-color: transparent;
+  font-family: "Bona Nova SC", serif;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+button:hover {
+  color: dodgerblue;
+}

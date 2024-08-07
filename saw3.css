@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  font-family: "Bona Nova SC", serif;
+}
+
+.container {
+  margin: 5%;
+  padding: 2.5%;
+  height: 80%;
+  background: url("https://cdn.pixabay.com/photo/2023/06/23/19/34/campfire-8084064_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+  background-size: cover;
+  color: yellow;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Bona Nova SC", serif;
+  padding: 0.2%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+a:hover {
+  color: orangered;
+}

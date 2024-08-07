@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: url("Images/palm.jpg");
+  background-position: center/cover;
+  background-repeat: no-repeat;
+  font-family: "Bona Nova SC", serif;
+  font-size: 1.75rem;
+  overflow: hidden;
+}
+.container {
+  padding: 5%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+a {
+  text-align: center;
+  text-decoration: none;
+  color: greenyellow;
+  font-size: 1.85rem;
+}
+a:hover {
+  text-decoration: overline underline;
+  color: yellow;
+}
+marquee {
+  margin-top: 5%;
+  color: rgb(252, 252, 206);
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+marquee:hover {
+  color: rgb(240, 240, 53);
+}
+@media screen and (max-width: 960px) {
+  body {
+    font-size: 1.25rem;
+  }
+  a {
+    font-size: 1.35rem;
+  }
+  marquee {
+    font-size: 1.25rem;
+  }
+}

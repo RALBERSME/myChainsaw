@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #e4e5db;
+  background-image: url("https://cdn.pixabay.com/photo/2024/04/14/11/17/ai-8695230_640.jpg");
+  background-size: cover;
+  font-family: "Bona Nova SC", serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.75rem;
+  overflow: hidden;
+}
+.container {
+  height: 90%;
+  margin: 5%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 2.5%;
+  padding: 2.5%;
+  color: yellow;
+  justify-content: space-around;
+}
+button {
+  padding: 1.2%;
+  background-color: yellow;
+  color: black;
+  font-family: "Bona Nova SC", serif;
+  font-size: 1.75rem;
+  cursor: pointer;
+  border-radius: 5%;
+}

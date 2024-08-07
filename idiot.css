@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+.container {
+  margin-top: 2.5%;
+  height: 80%;
+  width: 100%;
+  display: flex;
+}
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  padding-top: 60%;
+  text-align: center;
+  justify-content: center;
+  background-color: wheat;
+  color: black;
+  transform: rotateX(180deg);
+}
+.flip-card-back a {
+  margin-top: 2%;
+  text-decoration: none;
+  color: orange;
+  font-size: 2rem;
+}
+.flip-card-back a:hover {
+  color: orangered;
+}
+button {
+  padding: 1.5%;
+  width: 100%;
+  background: linear-gradient(to bottom, wheat, rgb(249, 244, 234));
+  color: black;
+  font-family: "Bona Nova SC", serif;
+  font-size: 2rem;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(244, 204, 129),
+    rgb(248, 226, 181)
+  );
+  font-size: 2.5rem;
+  font-weight: 600;
+}
