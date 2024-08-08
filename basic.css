@@ -10,7 +10,7 @@ html {
 body {
   height: 100vh;
 
-  background: url("https://cdn.pixabay.com/photo/2016/02/05/00/09/easy-rider-1180159_1280.jpg");
+  background: url("Images/easy-rider.png");
   background-position: 60% 50%;
   background-repeat: no-repeat;
   font-family: "Bona Nova SC", serif;

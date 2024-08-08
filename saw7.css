@@ -18,7 +18,7 @@ body {
 }
 .info {
   height: 100vh;
-  background: url("https://cdn.pixabay.com/photo/2020/11/22/20/41/tree-5767912_640.png");
+  background: url("Images/tree.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -28,7 +28,7 @@ body {
 .pulse {
   width: 600px;
   height: 600px;
-  background: url("https://cdn.pixabay.com/photo/2013/07/13/11/27/sparrow-158178_640.png");
+  background: url("Images/sparrow.png");
   background-position: 60% 50%;
   background-repeat: no-repeat;
   background-size: 50%;
